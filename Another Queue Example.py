@@ -18,6 +18,7 @@ if __name__ == "__main__":
 
     for i in range(num_threads):
         thread = Thread(target=worker, args=(q,))
+        # daemon thread helps prevent the program from getting stuck on the true loop in the worker block
         thread.daemon = True
         thread.start()
 
