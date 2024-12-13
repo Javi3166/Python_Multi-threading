@@ -14,7 +14,4 @@ if __name__ == "__main__":
     first = q.get()
     print(first)
 
-    # q.task_done()
-    # q.join()
-
     print("End Program")
